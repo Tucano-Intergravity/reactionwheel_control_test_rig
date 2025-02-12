@@ -148,7 +148,7 @@ Error_Handler();
   printf("Welcome to STM32 world !\n\r");
   /* -- Sample board code to switch on leds ---- */
   BSP_LED_On(LED_GREEN);
-  BSP_LED_Off(LED_YELLOW);
+  BSP_LED_Off(LED_YELLOW); //TEST
   BSP_LED_On(LED_RED);
   /* USER CODE END BSP */
 
