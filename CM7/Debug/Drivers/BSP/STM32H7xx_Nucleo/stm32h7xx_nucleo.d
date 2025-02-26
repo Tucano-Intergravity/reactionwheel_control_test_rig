@@ -1,6 +1,6 @@
 Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.o: \
- C:/INTERGRAVITY/reactionwheel_control_test_rig/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.c \
- C:/INTERGRAVITY/reactionwheel_control_test_rig/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h \
+ C:/Users/USER/STM32CubeIDE/workspace_1.17.0/reactionwheel_control_test_rig/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.c \
+ C:/Users/USER/STM32CubeIDE/workspace_1.17.0/reactionwheel_control_test_rig/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h \
  ../Core/Inc/stm32h7xx_nucleo_conf.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
@@ -30,10 +30,12 @@ Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.o: \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
+ ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
+ ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- C:/INTERGRAVITY/reactionwheel_control_test_rig/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h
-C:/INTERGRAVITY/reactionwheel_control_test_rig/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h:
+ C:/Users/USER/STM32CubeIDE/workspace_1.17.0/reactionwheel_control_test_rig/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h
+C:/Users/USER/STM32CubeIDE/workspace_1.17.0/reactionwheel_control_test_rig/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h:
 ../Core/Inc/stm32h7xx_nucleo_conf.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
@@ -63,6 +65,8 @@ C:/INTERGRAVITY/reactionwheel_control_test_rig/Drivers/BSP/STM32H7xx_Nucleo/stm3
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
-C:/INTERGRAVITY/reactionwheel_control_test_rig/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h:
+C:/Users/USER/STM32CubeIDE/workspace_1.17.0/reactionwheel_control_test_rig/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h:
