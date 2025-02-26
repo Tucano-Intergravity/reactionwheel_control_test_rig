@@ -166,6 +166,18 @@ Error_Handler();
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+//  if (HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2) != HAL_OK) {
+//	  BSP_LED_Off(LED_GREEN);
+//  }
+//
+//  if (HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3) != HAL_OK) {
+//	  BSP_LED_Off(LED_GREEN);
+//  }
+
+  if (HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4) != HAL_OK) {
+	  BSP_LED_Off(LED_GREEN);
+  }
+
   while (1)
   {
 
@@ -188,7 +200,8 @@ Error_Handler();
 	  //HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_RESET);
 
 	  //HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
-	  //BSP_LED_On(LED_RED);
+	  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_4, 250);
+	  BSP_LED_On(LED_RED);
 
 	  HAL_Delay(1000);
 
@@ -198,7 +211,8 @@ Error_Handler();
 	  //HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_RESET);
 
 	  //HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
-	  //BSP_LED_Off(LED_RED);
+	  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_4, 250);
+	  BSP_LED_Off(LED_RED);
 
 	  HAL_Delay(1000);
 
@@ -352,7 +366,7 @@ static void MX_TIM3_Init(void)
   htim3.Instance = TIM3;
   htim3.Init.Prescaler = 0;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 1279;
+  htim3.Init.Period = 799;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -386,7 +400,6 @@ static void MX_TIM3_Init(void)
   {
     Error_Handler();
   }
-  sConfigOC.Pulse = 1279;
   if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_4) != HAL_OK)
   {
     Error_Handler();
