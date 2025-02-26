@@ -62,8 +62,8 @@ all: main-build
 main-build: reactionwheel_control_test_rig_CM7.elf secondary-outputs
 
 # Tool invocations
-reactionwheel_control_test_rig_CM7.elf reactionwheel_control_test_rig_CM7.map: $(OBJS) $(USER_OBJS) C:\Users\USER\STM32CubeIDE\workspace_1.17.0\reactionwheel_control_test_rig\CM7\STM32H755ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "reactionwheel_control_test_rig_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\USER\STM32CubeIDE\workspace_1.17.0\reactionwheel_control_test_rig\CM7\STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="reactionwheel_control_test_rig_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+reactionwheel_control_test_rig_CM7.elf reactionwheel_control_test_rig_CM7.map: $(OBJS) $(USER_OBJS) C:\INTERGRAVITY\reactionwheel_control_test_rig\CM7\STM32H755ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "reactionwheel_control_test_rig_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\INTERGRAVITY\reactionwheel_control_test_rig\CM7\STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="reactionwheel_control_test_rig_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
